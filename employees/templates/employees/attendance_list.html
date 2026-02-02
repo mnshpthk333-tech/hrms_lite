@@ -1,0 +1,17 @@
+{% extends 'employees/base.html' %}
+{% block content %}
+<h2>Attendance Records</h2>
+<a href="{% url 'mark_attendance' %}" class="btn btn-primary mb-2">Mark Attendance</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Employee</th><th>Date</th><th>Status</th>
+    </tr>
+    {% for att in attendances %}
+    <tr>
+        <td>{{ att.employee.full_name }}</td>
+        <td>{{ att.date }}</td>
+        <td>{{ att.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
