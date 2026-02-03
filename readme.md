@@ -47,77 +47,75 @@ The goal is to provide a simple, usable, and professional interface for essentia
 - VS Code (or preferred IDE)
 - `pip` for Python package management
 
+### Notes
+This project is for learning and assessment purposes
+APIs are unauthenticated for simplicity
+SQLite is used for easy local setup
+
+### Future Enhancements
+Authentication & authorization
+Update employee details
+Attendance reports
+API security (JWT)
+
+### Author
+Manisha Pathak
+
+
 ### Steps
 
-2. **Create virtual environment** 
+**Clone the repository**
+```bash
+git clone <repository-url>
+cd hrms-lite
+
+#Create virtual environment
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 
 
-3. **Install dependencies**
+#Install dependencies
 pip install django djangorestframework
 
 
-4. **Apply migrations**
+#Apply migrations
 python manage.py migrate
 
 
-5. **Create admin user**
+#Create admin user
 python manage.py createsuperuser
 Run server
 
-python manage.py runserver
+#python manage.py runserver
 Access URLs
 Admin Panel
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/admin/
 Login using the superuser credentials.
 
 
-6. **API Endpoints**
+#API Endpoints
 Base URL
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/api/
 
 
 
-7. **Employee APIs**
+#Employee APIs
 
-Get all employees
+#Get all employees
 GET /api/employees/
 
-
-Add employee
+# Add employee
 POST /api/employees/
 
 
-Delete employee
+#Delete employee
 DELETE /api/employees/<id>/
 
-Attendance APIs
-
+#Attendance APIs
 Mark attendance
 POST /api/attendance/
 
 
-View attendance
+#View attendance
 GET /api/attendance/
-
-
-**Notes**
-This project is for learning and assessment purposes
-APIs are unauthenticated for simplicity
-SQLite is used for easy local setup
-
-**Future Enhancements**
-Authentication & authorization
-Update employee details
-Attendance reports
-API security (JWT)
-
-**Author**
-Manisha Pathak
-
-**Clone the repository**
-```bash
-git clone <repository-url>
-cd hrms-lite
 
