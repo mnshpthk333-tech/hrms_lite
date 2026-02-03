@@ -54,7 +54,7 @@ The goal is to provide a simple, usable, and professional interface for essentia
 git clone <repository-url>
 cd hrms-lite
 
-2. **Create virtual environment**
+2. **Create virtual environment** 
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 
@@ -78,13 +78,13 @@ http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/admin/
 Login using the superuser credentials.
 
 
-API Endpoints
+6. **API Endpoints**
 Base URL
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/api/
 
 
 
-Employee APIs
+7. **Employee APIs**
 
 Get all employees
 GET /api/employees/
@@ -107,16 +107,16 @@ View attendance
 GET /api/attendance/
 
 
-Notes
+**Notes**
 This project is for learning and assessment purposes
 APIs are unauthenticated for simplicity
 SQLite is used for easy local setup
 
-Future Enhancements
+**Future Enhancements**
 Authentication & authorization
 Update employee details
 Attendance reports
 API security (JWT)
 
-Author
+**Author**
 Manisha Pathak
