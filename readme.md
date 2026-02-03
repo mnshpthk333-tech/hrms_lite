@@ -64,8 +64,9 @@ Manisha Pathak
 
 ### Steps
 
-**Clone the repository**
+
 ```bash
+#Clone the repository
 git clone <repository-url>
 cd hrms-lite
 
