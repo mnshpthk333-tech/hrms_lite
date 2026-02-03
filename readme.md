@@ -49,11 +49,6 @@ The goal is to provide a simple, usable, and professional interface for essentia
 
 ### Steps
 
-1. **Clone the repository**
-```bash
-git clone <repository-url>
-cd hrms-lite
-
 2. **Create virtual environment** 
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
@@ -120,3 +115,9 @@ API security (JWT)
 
 **Author**
 Manisha Pathak
+
+**Clone the repository**
+```bash
+git clone <repository-url>
+cd hrms-lite
+
