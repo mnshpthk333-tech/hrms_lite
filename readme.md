@@ -91,11 +91,11 @@ python manage.py runserver
 #Access URLs
 #Admin Panel
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/admin/
-Login using the superuser credentials.
+#Login using the superuser credentials.
 
 
 #API Endpoints
-Base URL
+#Base URL
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/api/
 
 
