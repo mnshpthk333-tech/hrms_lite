@@ -84,11 +84,12 @@ python manage.py migrate
 
 #Create admin user
 python manage.py createsuperuser
-Run server
 
-#python manage.py runserver
-Access URLs
-Admin Panel
+#Run server
+python manage.py runserver
+
+#Access URLs
+#Admin Panel
 http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/admin/
 Login using the superuser credentials.
 
