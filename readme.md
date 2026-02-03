@@ -54,21 +54,20 @@ The goal is to provide a simple, usable, and professional interface for essentia
 git clone <repository-url>
 cd hrms-lite
 
-Create virtual environment
-
+2. **Create virtual environment**
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 
 
-Install dependencies
+3. **Install dependencies**
 pip install django djangorestframework
 
 
-Apply migrations
+4. **Apply migrations**
 python manage.py migrate
 
 
-Create admin user
+5. **Create admin user**
 python manage.py createsuperuser
 Run server
 
