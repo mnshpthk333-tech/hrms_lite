@@ -113,7 +113,7 @@ POST /api/employees/
 DELETE /api/employees/<id>/
 
 #Attendance APIs
-Mark attendance
+#Mark attendance
 POST /api/attendance/
 
 
