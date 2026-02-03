@@ -53,3 +53,71 @@ The goal is to provide a simple, usable, and professional interface for essentia
 ```bash
 git clone <repository-url>
 cd hrms-lite
+
+Create virtual environment
+
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+
+Install dependencies
+pip install django djangorestframework
+
+
+Apply migrations
+python manage.py migrate
+
+
+Create admin user
+python manage.py createsuperuser
+Run server
+
+python manage.py runserver
+Access URLs
+Admin Panel
+http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/admin/
+Login using the superuser credentials.
+
+
+API Endpoints
+Base URL
+http://hrms-lite-env.eba-ppb2663v.us-west-2.elasticbeanstalk.com/api/
+
+
+
+Employee APIs
+
+Get all employees
+GET /api/employees/
+
+
+Add employee
+POST /api/employees/
+
+
+Delete employee
+DELETE /api/employees/<id>/
+
+Attendance APIs
+
+Mark attendance
+POST /api/attendance/
+
+
+View attendance
+GET /api/attendance/
+
+
+Notes
+This project is for learning and assessment purposes
+APIs are unauthenticated for simplicity
+SQLite is used for easy local setup
+
+Future Enhancements
+Authentication & authorization
+Update employee details
+Attendance reports
+API security (JWT)
+
+Author
+Manisha Pathak
